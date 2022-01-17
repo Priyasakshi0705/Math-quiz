@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Moo+Lah+Lah&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="css" href="game.css">
+</head>
+
+<style>
+    body{
+    background-image: url("bg_2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* height:600px; */
+    }
+
+   h1{
+    color: rgb(28, 5, 92);
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+   }
+
+   #output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #28036d;
+padding: 10px;
+float: none;
+text-align: left;
+}
+
+.container{
+    width: 50%;
+}
+
+h3 , h4{
+  font-family: 'Playfair Display SC', serif;
+}
+
+h2 ,span{
+  font-family: 'Playfair Display SC', serif;
+  font-weight:bold ;
+  font-size: 20px;
+ display: inline-block;
+ padding-left: 20px;
+}
+
+#button{
+  margin-bottom: 20px;
+}
+</style>
+
+<body>
+
+    <h2 id="player1_name">   </h2>  <span id="player1_score"></span>
+    <br>
+    <h2 id="player2_name"> </h2> <span id="player2_score"></span> 
+
+    <div class="container">
+    <center>
+        <h1 ><b>The Math Quiz</b></h1>
+        <h3><b>Question Turn-<span id="que_turn"></b> </span></h3>
+        <h3><b>Answer Turn-<span id="ans_turn"> </b></span></h3>
+<br>
+       <div id="output"></div>
+       <br>
+    
+     <br>
+     <h4><b>Number-1</b></h4>
+     <br>
+       <input type="number" id="number1" class="form-control" placeholder="Number-1..">
+<br>
+<h4><b>Number-2</b></h4>
+<input type="number" id="number2" class="form-control" placeholder="Number-2..">
+<br>
+       <button id="button" onclick="send()"  class="btn btn-success" style="width:40%">Send</button>
+    </center>
+</div>
+
+    </body>
+    <script src="main2.js"></script>
+    </html>

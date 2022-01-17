@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Moo+Lah+Lah&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="css" href="style.css">
+
+
+</head>
+
+<style>
+    body{
+    background-image: url("bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+
+
+.login_div1 , .login_div2
+	{
+		background: white;
+		padding: 35px;
+		float: none;
+		border-radius: 15px;
+        background-image: url("divbg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+
+h1{
+    color: rgb(255, 253, 253);
+    font-family: 'Great Vibes', cursive;
+    /* font-weight: bold; */
+    font-size: 50px;
+}
+
+h3{
+    color:black;
+    font-family: 'Playfair Display SC', serif;
+}
+
+h5{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 17px;
+}
+
+
+</style>
+
+<body>
+	<center>
+<h1>The Math Quiz</h1>
+
+<br>
+<div class="login_div1 col-lg-4 col-md-8 col-sl-11 col-xs-11" >
+	<h3><b>Player 1 Login for the Quiz</b></h3>
+	<label>User name:</label>
+	<br>
+	<input id="player1_name" class="form-control" type="text" placeholder="Player 1 Name">
+</div>
+<br>
+<br>
+
+<div class="login_div2 col-lg-4 col-md-8 col-sl-11 col-xs-11">
+	<h3><b>Player 2 Login for the Quiz</b></h3>
+	<label>User name:</label>
+	<br>
+	<input id="player2_name" class="form-control" type="text"  placeholder="Player 2 Name">
+</div>
+<br>
+<button id="btn" onclick="addUser()" class="btn btn-danger" > <h5><b></b>Log In</b></h5></button>
+</center>
+</body>
+<script src="main.js"></script>
+</html>
